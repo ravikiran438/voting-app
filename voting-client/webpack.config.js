@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+var webpack = require( 'webpack' );
 
 module.exports = {
   entry: [
@@ -7,14 +7,14 @@ module.exports = {
     './src/index.jsx'
   ],
   module: {
-    loaders: [{
+    loaders: [ {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel'
-    }]
+    } ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: [ '', '.js', '.jsx' ]
   },
   output: {
     path: __dirname + '/dist',
